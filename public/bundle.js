@@ -69,53 +69,41 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__person_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__person_js__ = __webpack_require__(2);
 
+// import subtract, { square, add } from './utils.js';
 
+// console.log('app.js is running!!!');
+// console.log(square(4));
+// console.log(add(100, 23));
+// console.log(subtract(100, 81));
 
-console.log('app.js is running!!!');
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* square */](4));
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* add */](100, 23));
-
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["b" /* isAdult */](21));
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["b" /* isAdult */](15));
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["a" /* canDring */](21));
-console.log(__WEBPACK_IMPORTED_MODULE_1__person_js__["a" /* canDring */](6));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["c" /* isAdult */](21));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["c" /* isAdult */](15));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["a" /* canDring */](21));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["a" /* canDring */](6));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["b" /* default */](40));
+console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["b" /* default */](70));
 
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-console.log('utils.js is running')
-
-
-const square = (x) => x * x;
-/* harmony export (immutable) */ __webpack_exports__["b"] = square;
-
-
-const add = (a,b) => a + b;
-/* harmony export (immutable) */ __webpack_exports__["a"] = add;
-
-
-// export { square, add };
-
-
-/***/ }),
+/* 1 */,
 /* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const isAdult = (x) => x >= 18;
-/* harmony export (immutable) */ __webpack_exports__["b"] = isAdult;
+const isAdult = (age) => age >= 18;
+/* harmony export (immutable) */ __webpack_exports__["c"] = isAdult;
 
 
-const canDring = (x) => x >= 21;
+const canDring = (age) => age >= 21;
 /* harmony export (immutable) */ __webpack_exports__["a"] = canDring;
 
+
+const isSenior = (age) => age >= 65;
+
+/* harmony default export */ __webpack_exports__["b"] = (isSenior);
 
 
 /***/ })
