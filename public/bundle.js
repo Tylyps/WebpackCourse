@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: D:\\Udemy\\Webpack\\src\\app.js Unexpected token (70:6)\nYou may need an appropriate loader to handle this file type.\n| \r\n|     return (\r\n|       <div>\r\n|         <Header subtitle={subtitle} />\r\n|         <Action\r");
+console.log('app.js is running!!!');
 
 /***/ })
 /******/ ]);
